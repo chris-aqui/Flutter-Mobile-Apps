@@ -1,7 +1,8 @@
 void main() {
   var name = myName();
-
-  print('My name is $name');
+  name.length;
+  print('My name is ${name}');
+  print();
 }
 
 String myName() {
@@ -26,7 +27,7 @@ String myName() {
 //  the main function is automatic invloked by dart  when program is excuted.List
 //  every dart program has to have a main Function
 
-// *** deep stuff?
+// *** dart rules
 //  note that dart is an OOP!
 //  dart is a strongly typed program lang
 //  every value in dart has a type
@@ -37,3 +38,21 @@ String myName() {
 //  seems like you can't "reassign" it to a value with a diff type"
 
 // Dart can guess a value type and you dont alway have to define it
+
+// basic dart types
+
+//  String -  example " Hi "
+//  Int -     example 0, -999, 87600
+//  Double -  example 0.0001, -999.814, 100.1
+//  dynamic -  example "Hi", -0.0004, 90
+
+//  Why type matter
+//  proformance improved
+//  earier when working on larg projects
+//  less of a need to write test
+//  easy to find simple test
+
+//  string interpolation dart
+// You can access the value of an expression inside a string by using ${expression}
+
+// If the expression is an identifier, the {} can be skipped.
