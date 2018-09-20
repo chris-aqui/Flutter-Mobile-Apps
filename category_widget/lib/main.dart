@@ -29,7 +29,7 @@ class UnitConverterApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Unit Converter',
       home: Scaffold(
-        backgroundColor: Colors.green[100],
+        backgroundColor: Colors.blue[100],
         body: Center(
           // TODO: Determine what properties you'll need to pass into the widget
           child: Category(
