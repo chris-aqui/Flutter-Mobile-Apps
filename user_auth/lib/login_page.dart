@@ -28,8 +28,15 @@ class _LoginPageState extends State<LoginPage>{
               new TextFormField(
                 decoration: new InputDecoration(labelText: 'Password'),
                 obscureText: true,
+              ),
+              new RaisedButton(
+                child: new Text('Login',
+                  style: new TextStyle(
+                    fontSize: 20.0
+                    ),
+                )
               )
-            ]
+            ],
           ),
         ),
       )
