@@ -11,6 +11,10 @@ class _LoginPageState extends State<LoginPage>{
   String _email;
   String _password;
 
+  void validationAndSave(){
+
+  }
+
   @override
   Widget build(BuildContext context){
     return new Scaffold(
@@ -21,12 +25,15 @@ class _LoginPageState extends State<LoginPage>{
         padding: EdgeInsets.all(16.0),
         child: new Form(
           child: new Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               new TextFormField(
                 decoration: new InputDecoration(labelText: 'Email'),
+                validator: (value) => value.isEmpty ? 'Email can\'t be empty' : null
               ),
               new TextFormField(
                 decoration: new InputDecoration(labelText: 'Password'),
+                validator: (value) => value.isEmpty ? 'password can\'t be empty' : null
                 obscureText: true,
               ),
               new RaisedButton(
@@ -34,7 +41,8 @@ class _LoginPageState extends State<LoginPage>{
                   style: new TextStyle(
                     fontSize: 20.0
                     ),
-                )
+                ),
+                onPressed: validationAndSave,
               )
             ],
           ),
