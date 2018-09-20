@@ -18,6 +18,7 @@ class _LoginPageState extends State<LoginPage>{
         title: new Text('User Login'),
       ),
       body:  new Container(
+        padding: EdgeInsets.all(16.0),
         child: new Form(
           child: new Column(
             children: <Widget>[
@@ -26,6 +27,7 @@ class _LoginPageState extends State<LoginPage>{
               ),
               new TextFormField(
                 decoration: new InputDecoration(labelText: 'Password'),
+                obscureText: true,
               )
             ]
           ),
