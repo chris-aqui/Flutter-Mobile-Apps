@@ -18,7 +18,18 @@ class _LoginPageState extends State<LoginPage>{
         title: new Text('User Login'),
       ),
       body:  new Container(
-        child: new Text('Hello World'),
+        child: new Form(
+          child: new Column(
+            children: <Widget>[
+              new TextFormField(
+                decoration: new InputDecoration(labelText: 'Email'),
+              ),
+              new TextFormField(
+                decoration: new InputDecoration(labelText: 'Password'),
+              )
+            ]
+          ),
+        ),
       )
     );
   }
